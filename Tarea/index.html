@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Velocity Run | Zapatillas Deportivas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #198754;
+    }
+
+    .product-card img {
+      height: 200px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .testimonial {
+      background: url("https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf") center/cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0,0,0,0.75);
+      padding: 80px 0;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Velocity Run</a>
+  </div>
+</nav>
+<section class="mt-5 pt-4">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h3>Velocity X-Pro</h3>
+          <p class="price">L.850.99</p>
+          <p>Corre como los campeones con tecnología que impulsa tu vida como nunca.</p>
+          <a href="#catalogo" class="btn btn-primary">Comprar Ahora!</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1528701800489-20be9c0b6a4a" class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h3>Velocity Sprint</h3>
+          <p class="price">L.387.99</p>
+          <p>Rapido y velocidad para alto rendimiento.</p>
+          <a href="#catalogo" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" class="d-block w-100" alt="">
+        <div class="carousel-caption">
+          <h3>Velocity Urban</h3>
+          <p class="price">L.937.67</p>
+          <p>Comodidad deportiva con estilo urbano.</p>
+          <a href="#catalogo" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+<section id="catalogo" class="py-5">
+  <div class="container">
+    <h2 class="mb-4">Para correr</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Velocity Run Pro</h6>
+            <p class="price">L.1,238.00</p>
+            <button class="btn btn-success btn-sm">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1528701800489-20be9c0b6a4a" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Velocidad de Punta</h6>
+            <p class="price">L.388.16</p>
+            <button class="btn btn-success btn-sm">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4">Entrenamiento</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Velocidad de correr</h6>
+            <p class="price">L.2,000.00</p>
+            <button class="btn btn-success btn-sm">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4">Lifestyle</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" class="card-img-top">
+          <div class="card-body text-center">
+            <h6>Velocidad con estilo</h6>
+            <p class="price">L.788.00</p>
+            <button class="btn btn-success btn-sm">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4">Edición Especial</h2>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="card product-card border-warning">
+          <img src="https://images.unsplash.com/photo-1528701800489-20be9c0b6a4a" class="card-img-top">
+          <div class="card-body text-center">
+            <span class="badge bg-warning text-dark mb-2">Edición Limitada</span>
+            <h6>Velocity X-Pro Olímpica</h6>
+            <p class="price">l.5,000.00</p>
+            <button class="btn btn-success btn-sm">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="testimonial">
+  <div class="overlay text-center">
+    <div class="container">
+      <h2>Camila Torres</h2>
+      <h5>Campeona Olímpica 800m</h5>
+      <p class="mt-4 fst-italic">
+        “Desde que uso las Velocity X-Pro, siento que vuelo en cada zancada.
+        Comodidad, ligereza y potencia en un solo paso.”
+      </p>
+      <a href="#" class="btn btn-warning mt-3">
+        Descubre la Edición Especial Velocity X-Pro
+      </a>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h3>Únete a los más de 10,000 corredores que confían en la velocidad</h3>
+
+    <div class="my-3">
+      <i class="bi-instagram fs-3 mx-2"></i>
+      <i class="bi-tiktok fs-3 mx-2"></i>
+      <i class="bi-youtube fs-3 mx-2"></i>
+    </div>
+
+    <form class="row justify-content-center">
+      <div class="col-md-4">
+        <input type="email" class="form-control" placeholder="Correo electrónico">
+      </div>
+      <div class="col-md-2 mt-2 mt-md-0">
+        <button class="btn btn-primary w-100">Suscribirme</button>
+      </div>
+    </form>
+  </div>
+</section>
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2026 Velocity Run | Startup Velocity</p>
+</footer>
+
+<script src=<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
